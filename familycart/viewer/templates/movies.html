@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Welcome to FamilyCart!</h1>
+  <ul>
+    {% for movie in object_list %}
+      <li>
+        {{movie.id}}. {{ movie.title }} ({{ movie.released.year }}) - {{ movie.genre.name }} - rating: {{movie.rating}}
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
