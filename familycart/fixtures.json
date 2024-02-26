@@ -1,233 +1,384 @@
-[
+   [
     {
-      "model": "viewer.genre",
+      "model": "viewer.category",
       "pk": 1,
       "fields": {
-        "name": "Horror"
+        "name": "Fruits"
       }
     },
     {
-      "model": "viewer.genre",
+      "model": "viewer.category",
       "pk": 2,
       "fields": {
-        "name": "Thriller"
+        "name": "Bakery"
       }
     },
     {
-      "model": "viewer.genre",
+      "model": "viewer.category",
       "pk": 3,
       "fields": {
-        "name": "Action"
+        "name": "Drinks"
       }
     },
     {
-      "model": "viewer.genre",
+      "model": "viewer.category",
       "pk": 4,
       "fields": {
-        "name": "Crime"
+        "name": "Drinks(alco)"
       }
     },
     {
-      "model": "viewer.genre",
+      "model": "viewer.category",
       "pk": 5,
       "fields": {
-        "name": "Sport"
+        "name": "Milk&Cheese"
       }
     },
     {
-      "model": "viewer.genre",
+      "model": "viewer.category",
       "pk": 6,
       "fields": {
-        "name": "Comedy"
+        "name": "Cleaning"
       }
     },
     {
-      "model": "viewer.genre",
+      "model": "viewer.category",
       "pk": 7,
       "fields": {
-        "name": "Document"
+        "name": "Meat"
       }
     },
     {
-      "model": "viewer.genre",
+      "model": "viewer.category",
       "pk": 8,
       "fields": {
-        "name": "Drama"
+        "name": "Frozen Food"
       }
     },
     {
-      "model": "viewer.genre",
+      "model": "viewer.category",
       "pk": 9,
-      "fields": {
-        "name": "Science-fiction"
+      "fields": "Vegetables"
       }
     },
-    {
-      "model": "viewer.movie",
-      "pk": 2,
-      "fields": {
-        "title": "Big Bang Theory",
-        "genre": 7,
-        "rating": 10,
-        "released": "2021-08-20",
-        "description": "Description",
-        "created": "2022-08-20T13:23:08.168Z"
-      }
-    },
-    {
-      "model": "viewer.movie",
-      "pk": 3,
-      "fields": {
-        "title": "Krzyżacy",
-        "genre": 4,
-        "rating": 6,
-        "released": "1956-03-20",
-        "description": "Description",
-        "created": "2022-08-20T13:23:50.412Z"
-      }
-    },
-    {
-      "model": "viewer.movie",
-      "pk": 1,
-      "fields": {
-        "title": "Doctor Strange",
-        "genre": 1,
-        "rating": 8,
-        "released": "2016-08-25",
-        "description": "A movie about strange doctor",
-        "created": "2022-08-20T13:40:20.924Z"
-      }
-    },
-    {
-      "model": "viewer.movie",
-      "pk": 4,
-      "fields": {
-        "title": "Pulp Fiction",
-        "genre": 8,
-        "rating": 9,
-        "released": "1994-10-14",
-        "description": "Jules Winnfield (Samuel L. Jackson) and Vincent Vega (John Travolta) are two hit men who are out to retrieve a suitcase stolen from their employer, mob boss Marsellus Wallace (Ving Rhames). Wallace has also asked Vincent to take his wife Mia (Uma Thurman) out a few days later when Wallace himself will be out of town. Butch Coolidge (Bruce Willis) is an aging boxer who is paid by Wallace to lose his fight. The lives of these seemingly unrelated people are woven together comprising of a series of funny, bizarre and uncalled-for incidents.—Soumitra",
-        "created": "2022-08-20T13:40:43.303Z"
-      }
-    },
-    {
-      "model": "viewer.movie",
-      "pk": 5,
-      "fields": {
-        "title": "Avatar",
-        "genre": 3,
-        "rating": 8,
-        "released": "2009-12-18",
-        "description": "A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
-        "created": "2022-08-20T17:45:51.026Z"
-      }
-    },
-    {
-      "model": "viewer.movie",
-      "pk": 6,
-      "fields": {
-        "title": "The Godfather",
-        "genre": 8,
-        "rating": 9,
-        "released": "1972-03-24",
-        "description": "The Godfather \"Don\" Vito Corleone is the head of the Corleone mafia family in New York. He is at the event of his daughter's wedding. Michael, Vito's youngest son and a decorated WW II Marine is also present at the wedding. Michael seems to be uninterested in being a part of the family business. Vito is a powerful man, and is kind to all those who give him respect but is ruthless against those who do not. But when a powerful and treacherous rival wants to sell drugs and needs the Don's influence for the same, Vito refuses to do it. What follows is a clash between Vito's fading old values and the new ways which may cause Michael to do the thing he was most reluctant in doing and wage a mob war against all the other mafia families which could tear the Corleone family apart.",
-        "created": "2022-08-20T17:50:26.491Z"
-      }
-    },
-    {
-      "model": "viewer.movie",
-      "pk": 7,
-      "fields": {
-        "title": "Se7en",
-        "genre": 4,
-        "rating": 9,
-        "released": "1995-09-22",
-        "description": "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.",
-        "created": "2022-08-20T17:54:21.274Z"
-      }
-    },
-    {
-      "model": "viewer.movie",
-      "pk": 8,
-      "fields": {
-        "title": "Fight Club",
-        "genre": 8,
-        "rating": 9,
-        "released": "1999-10-15",
-        "description": "Fight Club is a 1999 American film directed by David Fincher and starring Brad Pitt, Edward Norton, and Helena Bonham Carter. It is based on the 1996 novel of the same name by Chuck Palahniuk. Norton plays the unnamed narrator, who is discontented with his white-collar job. He forms a \"fight club\" with soap salesman Tyler Durden, and becomes embroiled in a relationship with a destitute woman, Marla Singer (Bonham Carter).",
-        "created": "2022-08-20T17:58:07.846Z"
-      }
-    },
-    {
-      "model": "viewer.movie",
-      "pk": 9,
-      "fields": {
-        "title": "Coyote Ugly",
-        "genre": 6,
-        "rating": 6,
-        "released": "2000-08-04",
-        "description": "Aspiring songwriter Violet Sanford, after getting a job at a women-run NYC bar that teases its male patrons, comes out of her shell.",
-        "created": "2022-08-20T18:01:50.601Z"
-      }
-    },
-    {
-      "model": "viewer.movie",
-      "pk": 10,
-      "fields": {
-        "title": "What Women Want",
-        "genre": 6,
-        "rating": 6,
-        "released": "2000-12-17",
-        "description": "It is not easy to start from a funny idea like this, write a script for 90 minutes, get some humour and end up with a perfect bake.\r\n\r\nIn fact, it's easy to go wrong somewhere along the way, last too long, make it too slapstick, or too serious, and then after 25 minutes people know they shouldn't have paid for their seat.\r\n\r\nThis film - about a man suddenly endowed with hearing women's thoughts - is a favourite rerun at Christmas, and I still watch it (ok not in full, I have a life too) instead of changing channels because it's still funny.",
-        "created": "2022-08-20T18:04:24.247Z"
-      }
-    },
-    {
-      "model": "viewer.movie",
-      "pk": 11,
-      "fields": {
-        "title": "Scream 3",
-        "genre": 1,
-        "rating": 6,
-        "released": "2000-02-06",
-        "description": "Scream 3 is another fine slasher movie, it shows that Wes Craven truly did have a sense of humour, almost a parody of the first, it's not afraid to like fun at the characters, and it really does deliver the scares and thrills. Always great to see the original cast lineup, and all are on form, some of the newcomers are great here, I'm sure we all have our favourites.\r\n\r\nI do wonder if it had been better if the franchise came to an end here, Scream 4 isn't bad, but it's not a patch on this one. Trouble is, us fans always wanted more.\r\n\r\nThe usual slick production, it's very well put together, with great use of music.",
-        "created": "2022-08-20T18:06:39.569Z"
-      }
-    },
-    {
-      "model": "viewer.movie",
-      "pk": 12,
-      "fields": {
-        "title": "The Godfather Part II",
-        "genre": 8,
-        "rating": 9,
-        "released": "1974-12-20",
-        "description": "The film is in part both a sequel and a prequel to The Godfather, presenting two parallel dramas. The main storyline, following the first film's events, centers on Michael Corleone, the new Don of the Corleone crime family, trying to hold his business ventures together from 1958 to 1959; the other is a series of flashbacks following his father, Vito Corleone, from his childhood in Sicily in 1901 to his founding of the Corleone family in New York City.",
-        "created": "2022-08-20T18:06:39.569Z"
-      }
-    },
-    {
-      "model": "viewer.movie",
-      "pk": 13,
-      "fields": {
-        "title": "The Godfather Part III",
-        "genre": 8,
-        "rating": 8,
-        "released": "1990-12-25",
-        "description": "In his audio commentary for Part II, Coppola stated it was his belief in the first two films having told the complete Corleone saga with nothing more to add that led him to decline multiple requests from Paramount to make a third installment for over a decade, until severe financial difficulties caused by the critical and commercial failure of One from the Heart (1982) compelled him to accept the long-standing offer.It completes the story of Michael Corleone, who is now trying to legitimize his criminal empire, and shows the rise of Sonny Corleone's illegitimate son Vincent Corleone as Michael's successor. The film also portrays a fictionalized account of real-life events, including the death of Pope John Paul I and the Papal banking scandal of 1981 and 1982, linking them together and with the affairs of Michael Corleone. Coppola has stated he intended for Part III to be an epilogue to the first two films.",
-        "created": "2022-08-20T18:06:39.569Z"
-      }
-    },
-    {
-      "model": "viewer.movie",
-      "pk": 14,
-      "fields": {
-        "title": "The Godfather Coda: The Death of Michael Corleone",
-        "genre": 8,
-        "rating": 9,
-        "released": "2020-12-04",
-        "description": "A recut version of the film titled The Godfather Coda: The Death of Michael Corleone was released in a limited number of theatres as well as being released on Blu-ray and streaming platforms. Coppola said the film is the version he and Puzo had originally envisioned, and it \"vindicates\" its status among the trilogy and his daughter Sofia's performance. Sofia's performance was received negatively by critics. Leonard Maltin, said of the film that the casting of Sofia Coppola was an \"almost-fatal flaw\".",
-        "created": "2022-08-20T18:06:39.569Z"
-      }
+    [
+  {
+    "model": "viewer.product",
+    "pk": 1,
+    "fields": {
+      "Title": "Blueberries",
+      "Category": "Fruits",
+      "Quantity": 6,
+      "Released": "2024-02-05T00:00:00Z",
+      "Description": "Sweet and juicy blueberries, perfect for snacking or baking."
     }
-  ]
+  },
+  {
+    "model": "viewer.product",
+    "pk": 2,
+    "fields": {
+      "Title": "Apple",
+      "Category": "Fruits",
+      "Quantity": 8,
+      "Released": "2024-02-18T00:00:00Z",
+      "Description": "Crisp and sweet apple, a classic fruit choice."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 3,
+    "fields": {
+      "Title": "Orange",
+      "Category": "Fruits",
+      "Quantity": 4,
+      "Released": "2024-02-12T00:00:00Z",
+      "Description": "Juicy and refreshing orange, packed with vitamin C."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 4,
+    "fields": {
+      "Title": "White Bread",
+      "Category": "Bakery",
+      "Quantity": 7,
+      "Released": "2024-02-15T00:00:00Z",
+      "Description": "Freshly baked white bread, perfect for sandwiches."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 5,
+    "fields": {
+      "Title": "Rye Bread",
+      "Category": "Bakery",
+      "Quantity": 3,
+      "Released": "2024-02-04T00:00:00Z",
+      "Description": "Nutty and flavorful rye bread, perfect for sandwiches."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 6,
+    "fields": {
+      "Title": "Dark Bread",
+      "Category": "Bakery",
+      "Quantity": 9,
+      "Released": "2024-02-22T00:00:00Z",
+      "Description": "Rich and hearty dark bread, great for toasting."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 7,
+    "fields": {
+      "Title": "Cola",
+      "Category": "Drinks",
+      "Quantity": 5,
+      "Released": "2024-02-20T00:00:00Z",
+      "Description": "Classic cola drink, perfect for quenching your thirst."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 8,
+    "fields": {
+      "Title": "Mineral Water",
+      "Category": "Drinks",
+      "Quantity": 10,
+      "Released": "2024-02-07T00:00:00Z",
+      "Description": "Refreshing mineral water, great for hydration."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 9,
+    "fields": {
+      "Title": "Energy Drink",
+      "Category": "Drinks",
+      "Quantity": 2,
+      "Released": "2024-02-16T00:00:00Z",
+      "Description": "Boost your energy with this invigorating energy drink."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 10,
+    "fields": {
+      "Title": "Vodka",
+      "Category": "Drinks(alco)",
+      "Quantity": 6,
+      "Released": "2024-02-25T00:00:00Z",
+      "Description": "Pure and smooth vodka, perfect for cocktails."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 11,
+    "fields": {
+      "Title": "Gin",
+      "Category": "Drinks(alco)",
+      "Quantity": 8,
+      "Released": "2024-02-10T00:00:00Z",
+      "Description": "Refreshing and botanical gin, great for mixed drinks."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 12,
+    "fields": {
+      "Title": "Whiskey",
+      "Category": "Drinks(alco)",
+      "Quantity": 3,
+      "Released": "2024-02-14T00:00:00Z",
+      "Description": "Smooth and rich whiskey, perfect for sipping."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 13,
+    "fields": {
+      "Title": "Masdamer",
+      "Category": "Milk&Cheese",
+      "Quantity": 7,
+      "Released": "2024-02-08T00:00:00Z",
+      "Description": "Creamy and mild Masdamer cheese, great for sandwiches."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 14,
+    "fields": {
+      "Title": "Cheddar",
+      "Category": "Milk&Cheese",
+      "Quantity": 5,
+      "Released": "2024-02-21T00:00:00Z",
+      "Description": "Sharp and tangy cheddar cheese, perfect for melting."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 15,
+    "fields": {
+      "Title": "3.2% Milk",
+      "Category": "Milk&Cheese",
+      "Quantity": 9,
+      "Released": "2024-02-03T00:00:00Z",
+      "Description": "Rich and creamy milk, great for drinking or cooking."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 16,
+    "fields": {
+      "Title": "1.5% Milk",
+      "Category": "Milk&Cheese",
+      "Quantity": 6,
+      "Released": "2024-02-09T00:00:00Z",
+      "Description": "Low-fat milk, perfect for those watching their calories."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 17,
+    "fields": {
+      "Title": "Soap",
+      "Category": "Cleaning",
+      "Quantity": 3,
+      "Released": "2024-02-06T00:00:00Z",
+      "Description": "Gentle soap for everyday cleaning needs."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 18,
+    "fields": {
+      "Title": "Toilet Brush",
+      "Category": "Cleaning",
+      "Quantity": 8,
+      "Released": "2024-02-17T00:00:00Z",
+      "Description": "Sturdy toilet brush for keeping your bathroom clean."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 19,
+    "fields": {
+      "Title": "Windows Cleaner",
+      "Category": "Cleaning",
+      "Quantity": 2,
+      "Released": "2024-02-25T00:00:00Z",
+      "Description": "Effective cleaner for streak-free windows and mirrors."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 20,
+    "fields": {
+      "Title": "Minced Mix-Meat",
+      "Category": "Meat",
+      "Quantity": 4,
+      "Released": "2024-02-19T00:00:00Z",
+      "Description": "Versatile mix of minced meats, perfect for various dishes."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 21,
+    "fields": {
+      "Title": "Lamb",
+      "Category": "Meat",
+      "Quantity": 7,
+      "Released": "2024-02-13T00:00:00Z",
+      "Description": "Tender and flavorful lamb meat, ideal for roasting."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 22,
+    "fields": {
+      "Title": "Plork",
+      "Category": "Meat",
+      "Quantity": 9,
+      "Released": "2024-02-20T00:00:00Z",
+      "Description": "Hybrid meat product made from pork and poultry."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 23,
+    "fields": {
+      "Title": "Chicken",
+      "Category": "Meat",
+      "Quantity": 3,
+      "Released": "2024-02-04T00:00:00Z",
+      "Description": "Fresh and tender chicken meat, perfect for grilling or baking."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 24,
+    "fields": {
+      "Title": "Burgers",
+      "Category": "Frozen Food",
+      "Quantity": 6,
+      "Released": "2024-02-14T00:00:00Z",
+      "Description": "Juicy and flavorful burger patties, ready to grill."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 25,
+    "fields": {
+      "Title": "French Fries",
+      "Category": "Frozen Food",
+      "Quantity": 10,
+      "Released": "2024-02-22T00:00:00Z",
+      "Description": "Crispy and delicious French fries, perfect as a side dish."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 26,
+    "fields": {
+      "Title": "Pizza",
+      "Category": "Frozen Food",
+      "Quantity": 1,
+      "Released": "2024-02-10T00:00:00Z",
+      "Description": "Tasty frozen pizza, topped with your favorite ingredients."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 27,
+    "fields": {
+      "Title": "Carrots",
+      "Category": "Vegetables",
+      "Quantity": 8,
+      "Released": "2024-02-11T00:00:00Z",
+      "Description": "Fresh and crunchy carrots, packed with vitamins."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 28,
+    "fields": {
+      "Title": "Potatoes",
+      "Category": "Vegetables",
+      "Quantity": 5,
+      "Released": "2024-02-23T00:00:00Z",
+      "Description": "Versatile potatoes, perfect for roasting, mashing, or frying."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 29,
+    "fields": {
+      "Title": "Salad",
+      "Category": "Vegetables",
+      "Quantity": 2,
+      "Released": "2024-02-22T00:00:00Z",
+      "Description": "Versatile potatoes, perfect for roasting, mashing, or frying."
+    }
+  },
+]

@@ -4,7 +4,7 @@ from django.db.models import (
 )
 
 
-class Genre(Model):
+class Category(Model):
     objects = None
     name = CharField(max_length=128)
 
@@ -12,11 +12,11 @@ class Genre(Model):
         return str(self.name)
 
 
-class Movie(Model):
+class Product(Model):
     objects = None
     title = CharField(max_length=128)
-    genre = ForeignKey(Genre, on_delete=DO_NOTHING)
-    rating = IntegerField()
+    category = ForeignKey(Category, on_delete=DO_NOTHING)
+    quantity = IntegerField()
     released = DateField()
     description = TextField()
     created = DateTimeField(auto_now_add=True)

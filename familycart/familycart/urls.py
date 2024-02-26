@@ -18,13 +18,13 @@ from django.contrib import admin
 from django.urls import include, path
 from django.views.generic import TemplateView
 
-from viewer.models import Genre, Movie
-# from viewer.views import hello, movies
-from viewer.views import hello, MoviesView, MovieCreateView, MovieUpdateView, MovieDeleteView
+from viewer.models import Category, Product
+# from viewer.views import hello, products
+from viewer.views import hello, ProductsView, ProductCreateView, ProductUpdateView, ProductDeleteView
 from django.contrib.auth.views import LoginView
 
-admin.site.register(Genre)
-admin.site.register(Movie)
+admin.site.register(Category)
+admin.site.register(Product)
 
 urlpatterns = [
     # path('accounts/login/', LoginView.as_view(), name='login'),
@@ -33,11 +33,11 @@ urlpatterns = [
     # path('hello', hello)
     # path('hello/<s>', hello)
     path('hello/<s0>', hello),
-    # path('', movies, name='index')
-    path('', MoviesView.as_view(), name='index'),
-    path('movie/create', MovieCreateView.as_view(), name='movie_create'),
-    path('movie/update/<pk>', MovieUpdateView.as_view(), name='movie_update'),
-    path('movie/delete/<pk>', MovieDeleteView.as_view(), name='movie_delete'),
+    # path('', products, name='index')
+    path('', ProductsView.as_view(), name='index'),
+    path('product/create', ProductCreateView.as_view(), name='product_create'),
+    path('product/update/<pk>', ProductUpdateView.as_view(), name='product_update'),
+    path('product/delete/<pk>', ProductDeleteView.as_view(), name='product_delete'),
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
 ]
 
