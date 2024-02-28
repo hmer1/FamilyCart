@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="vh-100">
+  <div class="container py-5 h-100">
+    <div class="row d-flex align-items-center justify-content-center h-100">
+      <div class="col-md-8 col-lg-7 col-xl-6">
+        <img src="https://www.premiumsvg.com/wimg1/summer-sunrise-sunburn-sunset-repeat.webp"
+             class="img-fluid" alt="Nice image">
+      </div>
+      <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+        <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
+          {% for message in messages %}
+              <div class="alert alert-danger">
+              {{ message }}
+              </div>
+          {% endfor %}
+        <form method="post" class="form">
+        {% csrf_token %}
+
+          <div class="form-outline mb-3">
+            <input type="text" id="username" name="username" class="form-control"
+                   placeholder="Type user name"/>
+            <label class="form-label" for="username"></label>
+          </div>
+
+          <div class="form-outline mb-3">
+            <input type="password" id="password1" name="password1" class="form-control"
+                   placeholder="Provide your secret password"/>
+            <label class="form-label" for="password1"></label>
+          </div>
+
+          <div class="form-outline mb-3">
+            <input type="password" id="password2" name="password2" class="form-control"
+                   placeholder="Repeat your password"/>
+            <label class="form-label" for="password2"></label>
+          </div>
+
+          <div class="form-outline mb-3">
+            <input type="text" id="first_name" name="first_name" class="form-control"
+                   placeholder="Type first name"/>
+            <label class="form-label" for="first_name"></label>
+          </div>
+
+          <div class="form-outline mb-3">
+            <input type="text" id="last_name" name="last_name" class="form-control"
+                   placeholder="Type last name"/>
+            <label class="form-label" for="last_name"></label>
+          </div>
+          <div class="form-outline mb-3">
+            <input type="text" id="email" name="email" class="form-control"
+                   placeholder="Type your email"/>
+            <label class="form-label" for="email"></label>
+          </div>
+          <div class="form-outline mb-3">
+            <input type="text" id="phone_number" name="phone_number" class="form-control"
+                   placeholder="Type your phone number"/>
+            <label class="form-label" for="phone_number"></label>
+          </div>
+           <div class="form-outline mb-3">
+            <input type="text" id="postal_code" name="postal_code" class="form-control"
+                   placeholder="Type your postal code"/>
+            <label class="form-label" for="postal_code"></label>
+          </div>
+           <div class="form-outline mb-3">
+            <input type="text" id="town_name" name="town_name" class="form-control"
+                   placeholder="Type your town name"/>
+            <label class="form-label" for="town_name"></label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Sign up</button>
+          <br><br>
+
+          <p>
+            Already have an account? <a href="{% url 'user_login' %}">Log in</a>
+          </p>
+          </form>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
