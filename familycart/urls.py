@@ -39,6 +39,7 @@ urlpatterns = [
     path('product/update/<pk>', ProductUpdateView.as_view(), name='product_update'),
     path('product/delete/<pk>', ProductDeleteView.as_view(), name='product_delete'),
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
+    path('make_list/', include('make_list.urls')),
 ]
 
 
