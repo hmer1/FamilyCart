@@ -1,12 +1,38 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
-  <h1>Welcome to FamilyCart!</h1>
-  <ol>
-    {% for product in object_list %}
-      <li>
-        {{ product.title }} ({{ product.released.year }}) - {{ product.category.name }} - quantity: {{product.quantity}}
-      </li>
-    {% endfor %}
-  </ol>
+<style>
+  /* Dodatkowe style CSS */
+  .custom-container {
+    background-color: #696969;
+    padding: 20px;
+  }
+
+  .center-text {
+    text-align: center;
+    color: #FFFFFF;
+  }
+</style>
+
+<section class="vh-50">
+  <div class="container py-5 h-75">
+    <div class="row d-flex align-items-center justify-content-center h-100">
+      <div class="col-md-8 col-lg-7 col-xl-6">
+        <img src="{% static 'images/mainpicture.jpg' %}" class="img-fluid" alt="head">
+      </div>
+      <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+        <div class="container custom-container">
+          <div class="row">
+            <div class="col-md-12 center-text">
+              <h2>Hello, I am... FAMILY CART!</h2>
+              <p>Learn more about the app, <a href="{% url 'register' %}" style="color: white;">sign up</a> or <a href="{% url 'user_login' %}" style="color: white;">log in</a>, and take your shopping to the next level!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {% endblock %}
+
