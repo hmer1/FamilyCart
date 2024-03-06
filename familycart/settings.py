@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'viewer',
     'accounts',
     'make_list',
-    'show_list'
+    'show_list',
+    'after_login'
 ]
 
 MIDDLEWARE = [
