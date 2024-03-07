@@ -1,7 +1,7 @@
 {% load static %}
- 
+
 <html {% if LANGUAGE_CODE %}lang="{{ LANGUAGE_CODE }}"{% endif %}>
- 
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +19,7 @@
         }
     </style>
   </head>
- 
+
   <body>
     <div class="center">
         <img src="{% static 'images/head.jpg' %}" alt="head" width="1010" height="270">
@@ -45,24 +45,14 @@
             </a>
           </div>
           <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="{% url 'product_view' %}">
+            <a class="nav-item nav-link active" href="{% url 'product_create' %}">
             View Lists
             </a>
           </div>
         </div>
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="{% url 'user_login' %}">
-            Login
-          </a>
-        </div>
-        <div class="navbar-nav">
           <a class="nav-item nav-link active" href="{% url 'logout' %}">
             Logout
-          </a>
-        </div>
-          <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="{% url 'register' %}">
-            Register
           </a>
         </div>
         <div class="navbar-nav">
@@ -79,5 +69,5 @@
       </div>
     </div>
   </body>
- 
+
 </html>
