@@ -1,0 +1,42 @@
+{% extends 'base_after_login.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  /* CSS */
+  .custom-container {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .center-text {
+    text-align: center;
+  }
+</style>
+
+<div class="container custom-container">
+  <div class="row">
+    <div class="col-md-12 center-text">
+      <h2>Welcome to the Family Cart app!</h2>
+      <p>You can create shopping lists and browse the ones already created. Use the Family Cart app and take your shopping to the next level!</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <button type="button" class="btn btn-primary btn-lg btn-block" style="background-color: #FF7F50; border: 2px solid black;">Create a List</button>
+    </div>
+    <div class="col-md-6">
+      <button type="button" class="btn btn-secondary btn-lg btn-block" style="border: 2px solid black;">View Lists</button>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+{% endblock %}

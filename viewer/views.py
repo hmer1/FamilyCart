@@ -52,16 +52,19 @@ def hello(request, s0):
         context={'adjectives': [s0, s1, 'beautiful', 'wonderful']}
     )
 
+class HomePage(ListView):
+    template_name = 'products.html'
+    model = Product
 
 class ProductsView(ListView):
-    template_name = 'products.html'
+    template_name = 'product.html'
     model = Product
 
 
 class ProductCreateView(PermissionRequiredMixin, CreateView):
     template_name = 'form.html'
     form_class = ProductForm
-    success_url = reverse_lazy('index')
+    success_url = reverse_lazy('product_view')
     permission_required = 'viewer.add_product'
 
     def form_invalid(self, form):
@@ -73,7 +76,7 @@ class ProductUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
     template_name = 'form.html'
     model = Product
     form_class = ProductForm
-    success_url = reverse_lazy('index')
+    success_url = reverse_lazy('product_view')
     permission_required = 'viewer.change_product'
 
     def form_invalid(self, form):

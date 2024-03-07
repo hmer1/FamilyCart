@@ -1,0 +1,384 @@
+[
+    {
+      "model": "viewer.category",
+      "pk": 1,
+      "fields": {
+        "name": "Fruits"
+      }
+    },
+    {
+      "model": "viewer.category",
+      "pk": 2,
+      "fields": {
+        "name": "Bakery"
+      }
+    },
+    {
+      "model": "viewer.category",
+      "pk": 3,
+      "fields": {
+        "name": "Drinks"
+      }
+    },
+    {
+      "model": "viewer.category",
+      "pk": 4,
+      "fields": {
+        "name": "Drinks(alco)"
+      }
+    },
+    {
+      "model": "viewer.category",
+      "pk": 5,
+      "fields": {
+        "name": "Milk&Cheese"
+      }
+    },
+    {
+      "model": "viewer.category",
+      "pk": 6,
+      "fields": {
+        "name": "Cleaning"
+      }
+    },
+    {
+      "model": "viewer.category",
+      "pk": 7,
+      "fields": {
+        "name": "Meat"
+      }
+    },
+    {
+      "model": "viewer.category",
+      "pk": 8,
+      "fields": {
+        "name": "Frozen Food"
+      }
+    },
+    {
+      "model": "viewer.category",
+      "pk": 9,
+      "fields": {
+        "name": "Vegetables"
+      }
+    },
+    {
+        "model": "viewer.product",
+        "pk": 1,
+        "fields": {
+            "title": "Blueberries",
+            "category": 1,
+            "quantity": 6,
+            "released": "2024-02-05",
+            "description": "Sweet and juicy blueberries, perfect for snacking or baking."
+        }
+    },
+    {
+        "model": "viewer.product",
+        "pk": 2,
+        "fields": {
+            "title": "Apple",
+            "category": 1,
+            "quantity": 8,
+            "released": "2024-02-18",
+            "description": "Crisp and sweet apple, a classic fruit choice."
+        }
+    },
+    {
+        "model": "viewer.product",
+        "pk": 3,
+        "fields": {
+            "title": "Orange",
+            "category": 1,
+            "quantity": 4,
+            "released": "2024-02-12",
+            "description": "Juicy and refreshing orange, packed with vitamin C."
+        }
+    },
+    {
+        "model": "viewer.product",
+        "pk": 4,
+        "fields": {
+            "title": "White Bread",
+            "category": 2,
+            "quantity": 7,
+            "released": "2024-02-15",
+            "description": "Freshly baked white bread, perfect for sandwiches."
+        }
+    },
+    {
+        "model": "viewer.product",
+        "pk": 5,
+        "fields": {
+            "title": "Rye Bread",
+            "category": 2,
+            "quantity": 3,
+            "released": "2024-02-04",
+            "description": "Nutty and flavorful rye bread, perfect for sandwiches."
+        }
+    },
+    {
+        "model": "viewer.product",
+        "pk": 6,
+        "fields": {
+            "title": "Dark Bread",
+            "category": 2,
+            "quantity": 9,
+            "released": "2024-02-22",
+            "description": "Rich and hearty dark bread, great for toasting."
+        }
+    },
+    {
+        "model": "viewer.product",
+        "pk": 7,
+        "fields": {
+            "title": "Cola",
+            "category": 3,
+            "quantity": 5,
+            "released": "2024-02-20",
+            "description": "Classic cola drink, perfect for quenching your thirst."
+        }
+    },
+    {
+        "model": "viewer.product",
+        "pk": 8,
+        "fields": {
+            "title": "Mineral Water",
+            "category": 3,
+            "quantity": 10,
+            "released": "2024-02-07",
+            "description": "Refreshing mineral water, great for hydration."
+        }
+    },
+    {
+        "model": "viewer.product",
+        "pk": 9,
+        "fields": {
+            "title": "Energy Drink",
+            "category": 3,
+            "quantity": 2,
+            "released": "2024-02-16",
+            "description": "Boost your energy with this invigorating energy drink."
+        }
+    },
+    {
+        "model": "viewer.product",
+        "pk": 10,
+        "fields": {
+            "title": "Vodka",
+            "category": 4,
+            "quantity": 6,
+            "released": "2024-02-25",
+            "description": "Pure and smooth vodka, perfect for cocktails."
+        }
+    },
+    {
+        "model": "viewer.product",
+        "pk": 11,
+        "fields": {
+            "title": "Gin",
+            "category": 4,
+            "quantity": 8,
+            "released": "2024-02-10",
+            "description": "Refreshing and botanical gin, great for mixed drinks."
+        }
+    },
+    {
+        "model": "viewer.product",
+        "pk": 12,
+        "fields": {
+            "title": "Whiskey",
+            "category": 4,
+            "quantity": 3,
+            "released": "2024-02-14",
+            "description": "Smooth and rich whiskey, perfect for sipping."
+        }
+    },
+    {
+        "model": "viewer.product",
+        "pk": 13,
+        "fields": {
+            "title": "Masdamer",
+            "category": 5,
+            "quantity": 7,
+            "released": "2024-02-08",
+            "description": "Creamy and mild Masdamer cheese, great for sandwiches."
+        }
+    },
+  {
+    "model": "viewer.product",
+    "pk": 14,
+    "fields": {
+      "title": "Cheddar",
+      "category": 5,
+      "quantity": 5,
+      "released": "2024-02-21",
+      "description": "Sharp and tangy cheddar cheese, perfect for melting."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 15,
+    "fields": {
+      "title": "3.2% Milk",
+      "category": 5,
+      "quantity": 9,
+      "released": "2024-02-03",
+      "description": "Rich and creamy milk, great for drinking or cooking."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 16,
+    "fields": {
+      "title": "1.5% Milk",
+      "category": 5,
+      "quantity": 6,
+      "released": "2024-02-09",
+      "description": "Low-fat milk, perfect for those watching their calories."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 17,
+    "fields": {
+      "title": "Soap",
+      "category":6 ,
+      "quantity": 3,
+      "released": "2024-02-06",
+      "description": "Gentle soap for everyday cleaning needs."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 18,
+    "fields": {
+      "title": "Toilet Brush",
+      "category": 6,
+      "quantity": 8,
+      "released": "2024-02-17",
+      "description": "Sturdy toilet brush for keeping your bathroom clean."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 19,
+    "fields": {
+      "title": "Windows Cleaner",
+      "category": 6,
+      "quantity": 2,
+      "released": "2024-02-25",
+      "description": "Effective cleaner for streak-free windows and mirrors."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 20,
+    "fields": {
+      "title": "Minced Mix-Meat",
+      "category": 7,
+      "quantity": 4,
+      "released": "2024-02-19",
+      "description": "Versatile mix of minced meats, perfect for various dishes."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 21,
+    "fields": {
+      "title": "Lamb",
+      "category": 7,
+      "quantity": 7,
+      "released": "2024-02-13",
+      "description": "Tender and flavorful lamb meat, ideal for roasting."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 22,
+    "fields": {
+      "title": "Pork",
+      "category": 7,
+      "quantity": 9,
+      "released": "2024-02-20",
+      "description": "Hybrid meat product made from pork and poultry."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 23,
+    "fields": {
+      "title": "Chicken",
+      "category": 7,
+      "quantity": 3,
+      "released": "2024-02-04T",
+      "description": "Fresh and tender chicken meat, perfect for grilling or baking."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 24,
+    "fields": {
+      "title": "Burgers",
+      "category": 8,
+      "quantity": 6,
+      "released": "2024-02-14T",
+      "description": "Juicy and flavorful burger patties, ready to grill."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 25,
+    "fields": {
+      "title": "French Fries",
+      "category": 8,
+      "quantity": 10,
+      "released": "2024-02-22T",
+      "description": "Crispy and delicious French fries, perfect as a side dish."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 26,
+    "fields": {
+      "title": "Pizza",
+      "category": 8,
+      "quantity": 1,
+      "released": "2024-02-10T",
+      "description": "Tasty frozen pizza, topped with your favorite ingredients."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 27,
+    "fields": {
+      "title": "Carrots",
+      "category": 9,
+      "quantity": 8,
+      "released": "2024-02-11T",
+      "description": "Fresh and crunchy carrots, packed with vitamins."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 28,
+    "fields": {
+      "title": "Potatoes",
+      "category": 9,
+      "quantity": 5,
+      "released": "2024-02-23T",
+      "description": "Versatile potatoes, perfect for roasting, mashing, or frying."
+    }
+  },
+  {
+    "model": "viewer.product",
+    "pk": 29,
+    "fields": {
+      "title": "Salad",
+      "category": "Vegetables",
+      "quantity": 2,
+      "released": "2024-02-22T",
+      "description": "Versatile potatoes, perfect for roasting, mashing, or frying."
+    }
+  }
+]

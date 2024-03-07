@@ -20,7 +20,7 @@ from django.views.generic import TemplateView
 
 from viewer.models import Category, Product
 # from viewer.views import hello, products
-from viewer.views import hello, ProductsView, ProductCreateView, ProductUpdateView, ProductDeleteView
+from viewer.views import hello, HomePage, ProductsView, ProductCreateView, ProductUpdateView, ProductDeleteView
 from django.contrib.auth.views import LoginView
 
 admin.site.register(Category)
@@ -34,11 +34,13 @@ urlpatterns = [
     # path('hello/<s>', hello)
     path('hello/<s0>', hello),
     # path('', products, name='index')
-    path('', ProductsView.as_view(), name='index'),
+    path('', HomePage.as_view(), name='index'),
+    path('product/view', ProductsView.as_view(), name='product_view'),
     path('product/create', ProductCreateView.as_view(), name='product_create'),
     path('product/update/<pk>', ProductUpdateView.as_view(), name='product_update'),
     path('product/delete/<pk>', ProductDeleteView.as_view(), name='product_delete'),
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
+    path('make_list/', include('make_list.urls'))
 ]
 
 

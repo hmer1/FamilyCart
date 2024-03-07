@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Welcome to FamilyCart!</h1>
+  <ol>
+    {% for product in object_list %}
+      <li>
+        {{ product.title }} ({{ product.released.year }}) - {{ product.category.name }} - quantity: {{product.quantity}}
+      </li>
+    {% endfor %}
+  </ol>
+{% endblock %}
