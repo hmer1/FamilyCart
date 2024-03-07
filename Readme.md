@@ -12,7 +12,7 @@ The Family Cart shopping list application is an invaluable tool for anyone looki
 
 ## Technologies Used
 
-This application was built using the Django framework. It is the "3 pepople in 40 hours" project as part of the Python course at the Software Development Academy (SDA).
+This application was built using the Django framework. It is the "3 people in 40 hours" project as part of the Python course at the Software Development Academy (SDA).
 
 ## Installation
 
